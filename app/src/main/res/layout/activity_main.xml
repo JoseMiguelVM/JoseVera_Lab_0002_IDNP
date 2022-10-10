@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:text="Registro de Postulantes"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <TextView
+            android:id="@+id/TextApellidoPaterno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Apellido Paterno:"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="82dp" />
+
+        <EditText
+            android:id="@+id/DatoApellidoPaterno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/TextApellidoMaterno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Apellido Materno:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/DatoApellidoMaterno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/TextNombres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Nombre del Postulante:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/DatoNombres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/TextFechaNacimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Fecha de Nacimiento:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/DatosFechaNacimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="dd/mm/aa"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/TextColegio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Colegio de Procedencia:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/DatosColegio"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/TextCarrera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Carrera a la que postula:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/DatosCarrera"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/Guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="70dp"
+            android:onClick="GuardarEnLista"
+            android:text="Guardar Datos" />
+
+        <Button
+            android:id="@+id/Listar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="70dp"
+            android:onClick="VerLista"
+            android:text="Listar Datos" />
+
+    </LinearLayout>
+</LinearLayout>
